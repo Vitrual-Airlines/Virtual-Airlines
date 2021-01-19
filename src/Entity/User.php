@@ -31,7 +31,7 @@ class User implements UserInterface
 
     /**
      * @var string The hashed password
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string" ,nullable=true)
      */
     private $password;
 
@@ -77,11 +77,16 @@ class User implements UserInterface
      */
     public function getRoles(): array
     {
+
         $roles = $this->roles;
-        // guarantee every user at least has ROLE_USER
-        $roles[] = 'ROLE_USER';
+
+        // guarantees that a user always has at least one role for security
+        if (empty($roles)) {
+            $roles[] = 'ROLE_USER';
+        }
 
         return array_unique($roles);
+
     }
 
     public function setRoles(array $roles): self
