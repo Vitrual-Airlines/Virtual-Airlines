@@ -11,5 +11,8 @@ import './styles/app.css';
 
 // start the Stimulus application
 import './bootstrap';
+import 'bootstrap/dist/js/bootstrap.bundle';
+import 'bootstrap/js/src/carousel';
+import 'bootstrap/js/src/popover';
 
 console.log('Very good, it\'s OK');
