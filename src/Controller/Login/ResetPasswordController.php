@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Controller\User\Login;
+namespace App\Controller\Login;
 
 
 use App\Entity\User;

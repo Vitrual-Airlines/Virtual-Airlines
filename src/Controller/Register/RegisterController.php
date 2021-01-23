@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller\User\Register;
+namespace App\Controller\Register;
 
 use App\Entity\User;
 use App\Form\PasswordType;
