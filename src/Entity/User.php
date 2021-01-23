@@ -6,6 +6,7 @@ use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
+
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
  * @ORM\Table(name="`user`")
@@ -35,15 +36,33 @@ class User implements UserInterface
      */
     private $password;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $username;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $fptoken;
+    private $remember_token;
+
+    /**
+     * @ORM\Column(type="datetime")
+     */
+    private $created_at;
+
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $Update_at;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $name;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $lastname;
+
+
 
     public function getId(): ?int
     {
@@ -62,15 +81,7 @@ class User implements UserInterface
         return $this;
     }
 
-    /**
-     * A visual identifier that represents this user.
-     *
-     * @see UserInterface
-     */
-    public function getUsername(): string
-    {
-        return (string) $this->email;
-    }
+
 
     /**
      * @see UserInterface
@@ -128,22 +139,71 @@ class User implements UserInterface
         // $this->plainPassword = null;
     }
 
-    public function setUsername(string $username): self
+    /**
+     * @see UserInterface
+     */
+    public function getUsername(): ?String
     {
-        $this->username = $username;
+        return $this->email;
+    }
+    public function getRememberToken(): ?string
+    {
+        return $this->remember_token;
+    }
+
+    public function setRememberToken(?string $remember_token): self
+    {
+        $this->remember_token = $remember_token;
 
         return $this;
     }
 
-    public function getFptoken(): ?string
+    public function getCreatedAt(): ?\DateTimeInterface
     {
-        return $this->fptoken;
+        return $this->created_at;
     }
 
-    public function setFptoken(?string $fptoken): self
+    public function setCreatedAt(\DateTimeInterface $created_at): self
     {
-        $this->fptoken = $fptoken;
+        $this->created_at = $created_at;
 
         return $this;
     }
+
+    public function getUpdateAt(): ?\DateTimeInterface
+    {
+        return $this->Update_at;
+    }
+
+    public function setUpdateAt(?\DateTimeInterface $Update_at): self
+    {
+        $this->Update_at = $Update_at;
+
+        return $this;
+    }
+
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(string $name): self
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    public function getLastname(): ?string
+    {
+        return $this->lastname;
+    }
+
+    public function setLastname(string $lastname): self
+    {
+        $this->lastname = $lastname;
+
+        return $this;
+    }
+
 }

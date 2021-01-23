@@ -3,6 +3,21 @@
 {% block body %}
     <div class="container mt-4">
         <h2> S'inscrire</h2>
-        {{ include ('user/register/form.html.twig',{form: form, button: 's inscrire'}) }}
+        {% for message in app.flashes('warning') %}
+            <div class="alert-danger">
+                {{ message }}
+            </div>
+        {% endfor %}
+        {% for message in app.flashes('message') %}
+            <div class="alert-danger">
+                {{ message }}
+            </div>
+        {% endfor %}
+        {% for message in app.flashes('danger') %}
+            <div class="alert-danger">
+                {{ message }}
+            </div>
+        {% endfor %}
+        {{ include ('form/formregister.html.twig') }}
     </div>
 {% endblock %}
