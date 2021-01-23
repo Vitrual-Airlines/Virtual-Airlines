@@ -19,7 +19,7 @@ class RegisterController extends AbstractController
     /**
      * @Route("/register", name="register")
      */
-    public function index(Request  $request ,  \Swift_Mailer $mailer, TokenGeneratorInterface $tokenGenerator): Response
+    public function index(Request  $request ,  \Swift_Mailer $mailer, TokenGeneratorInterface $tokenGenerator ,  UserPasswordEncoderInterface $passwordEncoder): Response
     {
         $user = new User();
         $users = $this->getDoctrine()->getRepository(User::class);
@@ -27,7 +27,8 @@ class RegisterController extends AbstractController
            $email = $request->request->get('email');
            $name = $request->request->get('name');
            $lastname = $request->request->get('lastname');
-           if(!empty($email && $name && $lastname)){
+           $password = $request->request->get('password');
+            if(!empty($email && $name && $lastname && $password)){
                if (filter_var($email,FILTER_VALIDATE_EMAIL)){
                    $userresult = $users->findOneByEmail($email);
                    if ($userresult === null) {
@@ -37,6 +38,7 @@ class RegisterController extends AbstractController
                            $user->setEmail($email);
                            $user->setName($name);
                            $user->setLastname($lastname);
+                           $user->setPassword($passwordEncoder->encodePassword($user,$password));
                            $user->setCreatedAt(New \DateTime());
                            $entityManager = $this->getDoctrine()->getManager();
                            $entityManager->persist($user);
@@ -48,11 +50,11 @@ class RegisterController extends AbstractController
                        $url = $this->generateUrl('app_confirme', array('token' => $token), UrlGeneratorInterface::ABSOLUTE_URL);
 
                        // On génère l'e-mail
-                       $message = (new \Swift_Message('Mot de passe oublié'))
+                       $message = (new \Swift_Message('Confirmation'))
                            ->setFrom('samsvr75@gmail.com')
                            ->setTo($user->getEmail())
                            ->setBody(
-                               "Bonjour,<br><br>Une demande de réinitialisation de mot de passe a été effectuée pour le site Nouvelle-Techno.fr. Veuillez cliquer sur le lien suivant : " . $url,
+                               "Bonjour,<br><br>Une demande de creation de compte a été effectuée . Veuillez cliquer sur le lien suivant : " . $url,
                                'text/html'
                            );
                        // On envoie l'e-mail
@@ -74,7 +76,7 @@ class RegisterController extends AbstractController
     /**
      * @Route("/confirme/{token}", name="app_confirme")
      */
-    public function resetPassword(Request $request, string $token, UserPasswordEncoderInterface $passwordEncoder)
+    public function resetPassword(Request $request, string $token)
     {
         // On cherche un utilisateur avec le token donné
         $user = $this->getDoctrine()->getRepository(User::class)->findOneBy(['remember_token' => $token]);
@@ -82,35 +84,24 @@ class RegisterController extends AbstractController
         // Si l'utilisateur n'existe pas
         if ($user === null) {
             // On affiche une erreur
-            $this->addFlash('danger', 'Token Inconnu');
+            $this->addFlash('danger', "L'utilisateur n existe pas ");
             return $this->redirectToRoute('app');
         }
 
-
-        if ($request->isMethod('POST')) {
-           $password = $request->request->get('password') ;
-
-           if(!empty( $password)){
                // On supprime le token
                $user->setRememberToken('');
 
-               // On chiffre le mot de passe
-               $user->setPassword($passwordEncoder->encodePassword($user, $password));
+               $user->setRoles(["ROLE_USER"]);
                // On stocke
                $entityManager = $this->getDoctrine()->getManager();
                $entityManager->persist($user);
                $entityManager->flush();
 
                // On crée le message flash
-               $this->addFlash('message', 'Mot de passe mis à jour');
+               $this->addFlash('message', 'le compte a bien eté confirmer ');
 
                // On redirige vers la page de connexion
-               return $this->redirectToRoute('app_login');
-           }else {
 
-               $this->addFlash('warning', "tout les champs ne sont pas remplit");// Si on n'a pas reçu les données, on affiche le formulaire
-           }
-        }
             return $this->render('user/register/confirme.html.twig', [
                 'token' => $token,
             ]);

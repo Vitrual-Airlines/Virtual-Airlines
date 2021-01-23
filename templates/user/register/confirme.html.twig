@@ -2,22 +2,6 @@
 {% block title 'S inscrire' %}
 {% block body %}
     <div class="container mt-4">
-        <h2> Confirmer l'inscrpiton</h2>
-        {% for message in app.flashes('warning') %}
-            <div class="alert-danger">
-                {{ message }}
-            </div>
-        {% endfor %}
-        {% for message in app.flashes('message') %}
-            <div class="alert-danger">
-                {{ message }}
-            </div>
-        {% endfor %}
-        {% for message in app.flashes('danger') %}
-            <div class="alert-danger">
-                {{ message }}
-            </div>
-        {% endfor %}
-        {{ include ('form/formpassword.html.twig') }}
+        <p> votre compte a bien été cree vous pouvez vous connecter en cliquant <a href="{{ path('app_login') }}">ice</a>
     </div>
 {% endblock %}

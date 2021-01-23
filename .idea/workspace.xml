@@ -2,33 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e13be45-cabb-4d7a-9187-45e4b8682c13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210121201728.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210123133858.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/User/Login/ResetPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/User/Login/SecurityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/form/formpassword.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/form/formregister.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/form/formresetpassword.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/login/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/login/resetpassword.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/virtualairline.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/virtualairline.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210120170305.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20210121192221.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/User/Register/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/User/Register/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/PasswordType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegisterType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ResetPassType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/app/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/form/formregister.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form/formregister.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/login/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/login/login.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user/register/confirme.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/register/confirme.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/register/form.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/register/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/register/register.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
