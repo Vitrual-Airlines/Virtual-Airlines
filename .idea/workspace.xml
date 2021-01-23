@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e13be45-cabb-4d7a-9187-45e4b8682c13" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/User/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Roles/CheckRoles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/notifier.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/notifier.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Login/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Login/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Login/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Login/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Register/PasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Register/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Register/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/login/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/login/resetpassword.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/resetpassword.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/register/confirme.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register/confirme.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/register/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register/register.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,21 +152,22 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\laragon\www\virtualairline\src\Controller\admin" />
       <recent name="D:\laragon\www\virtualairline\templates\form" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\laragon\www\virtualairline\templates" />
+      <recent name="D:\laragon\www\virtualairline\src\Controller" />
       <recent name="D:\laragon\www\virtualairline\src\Controller\User\Login" />
       <recent name="D:\laragon\www\virtualairline\templates\user\login" />
       <recent name="D:\laragon\www\virtualairline\src\Controller\User\Register" />
-      <recent name="D:\laragon\www\virtualairline\templates\user" />
-      <recent name="D:\laragon\www\virtualairline\src\Controller\User" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

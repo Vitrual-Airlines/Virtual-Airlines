@@ -62,7 +62,8 @@ class ResetPasswordController extends AbstractController
             }
             $this->addFlash('warning', "l'email est incorrect");
         }
-        return $this->render('user/login/resetpassword.html.twig');
+        $etape = 1;
+        return $this->render('login/resetpassword.html.twig' , [ 'etape'=>$etape]);
     }
 
 
@@ -102,8 +103,8 @@ class ResetPasswordController extends AbstractController
             return $this->redirectToRoute('app_login');
         }else {
             // Si on n'a pas reçu les données, on affiche le formulaire
-            return $this->render('user/register/confirme.html.twig', ['token' => $token]);
+            $etape = 2;
+            return $this->render('login/resetpassword.html.twig', ['token' => $token , 'etape'=>$etape] );
         }
-
     }
 }

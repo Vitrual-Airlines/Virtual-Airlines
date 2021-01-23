@@ -70,7 +70,7 @@ class RegisterController extends AbstractController
                $this->addFlash('warning', "tout les champs ne sont pas completer");
            }
         }
-        return $this->render('user/register/register.html.twig');
+        return $this->render('register/register.html.twig');
     }
 
     /**
@@ -102,7 +102,7 @@ class RegisterController extends AbstractController
 
                // On redirige vers la page de connexion
 
-            return $this->render('user/register/confirme.html.twig', [
+            return $this->render('register/confirme.html.twig', [
                 'token' => $token,
             ]);
     }
