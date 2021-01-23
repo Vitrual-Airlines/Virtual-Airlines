@@ -24,6 +24,16 @@
                                 {{ message }}
                             </div>
                         {% endfor %}
+                        {% for message in app.flashes('message') %}
+                            <div class="alert-danger">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                        {% for message in app.flashes('danger') %}
+                            <div class="alert-danger">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
                         <h1>Example headline.</h1>
                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
                             gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>

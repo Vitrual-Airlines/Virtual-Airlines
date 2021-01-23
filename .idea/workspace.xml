@@ -2,23 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e13be45-cabb-4d7a-9187-45e4b8682c13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/User/Register/PasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/User/Register/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/RegisterType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ResetPassType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/register/confirme.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/register/form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/register/register.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210121201728.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210123133858.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/User/Login/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/User/Login/SecurityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/form/formpassword.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/form/formregister.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/form/formresetpassword.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/login/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/login/resetpassword.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/virtualairline.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/virtualairline.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/controllers.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/controllers.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210118190234.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20210118195116.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210120170305.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20210121192221.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/User/Register/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/User/Register/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/PasswordType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RegisterType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ResetPassType.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/app/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/register/confirme.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/register/confirme.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/register/form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/register/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/register/register.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +127,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/serializer" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-guard" />
-      <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/validator" />
       <path value="$PROJECT_DIR$/vendor/psr/link" />
       <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
@@ -139,6 +148,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1nCXdEapCnQIKklNpsLSE7GUf6X" />
@@ -159,11 +169,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\laragon\www\virtualairline\templates\form" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\laragon\www\virtualairline\src\Controller\User\Login" />
+      <recent name="D:\laragon\www\virtualairline\templates\user\login" />
       <recent name="D:\laragon\www\virtualairline\src\Controller\User\Register" />
       <recent name="D:\laragon\www\virtualairline\templates\user" />
       <recent name="D:\laragon\www\virtualairline\src\Controller\User" />
-      <recent name="D:\laragon\www\virtualairline\templates\app\register" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -180,6 +194,8 @@
       <workItem from="1610999258020" duration="312000" />
       <workItem from="1611071550209" duration="4081000" />
       <workItem from="1611077790219" duration="894000" />
+      <workItem from="1611254051215" duration="6243000" />
+      <workItem from="1611408710663" duration="1098000" />
     </task>
     <servers />
   </component>
@@ -188,27 +204,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1611077701505">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611077701505" />
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611075846523">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611075846523" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1610997502390">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1610997502390" />
-    <state x="739" y="242" key="NewPhpClassDialog" timestamp="1611075401384">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="739" y="242" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611075401384" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1610992388829">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1610992388829" />
   </component>
 </project>

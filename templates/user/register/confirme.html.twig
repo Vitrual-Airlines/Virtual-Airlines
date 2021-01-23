@@ -2,7 +2,22 @@
 {% block title 'S inscrire' %}
 {% block body %}
     <div class="container mt-4">
-        <h2> S'inscrire</h2>
-        {{ include ('user/register/form.html.twig',{form: form, button: 'confirmer'}) }}
+        <h2> Confirmer l'inscrpiton</h2>
+        {% for message in app.flashes('warning') %}
+            <div class="alert-danger">
+                {{ message }}
+            </div>
+        {% endfor %}
+        {% for message in app.flashes('message') %}
+            <div class="alert-danger">
+                {{ message }}
+            </div>
+        {% endfor %}
+        {% for message in app.flashes('danger') %}
+            <div class="alert-danger">
+                {{ message }}
+            </div>
+        {% endfor %}
+        {{ include ('form/formpassword.html.twig') }}
     </div>
 {% endblock %}
