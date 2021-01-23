@@ -13,8 +13,12 @@ class RegisterType extends AbstractType
     {
         $builder
             ->add('email')
+<<<<<<< Updated upstream
             ->add('username')
         ;
+=======
+            ->add('username');
+>>>>>>> Stashed changes
     }
 
     public function configureOptions(OptionsResolver $resolver)
