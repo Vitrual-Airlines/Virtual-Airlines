@@ -12,7 +12,6 @@ class CheckRoles
     public function __construct(Security $security)
     {
         $this->security = $security;
-
     }
 
 
@@ -28,3 +27,4 @@ class CheckRoles
         return $route ;
     }
 }
+    
