@@ -4,7 +4,7 @@
 namespace App\Controller\Admin;
 
 
-use App\Roles\CheckRoles;
+use App\Roles\CheckRolesAdmin;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -13,7 +13,7 @@ class AdminController extends AbstractController
 {
 
     private $checkroles ;
-    public function __construct(CheckRoles $checkRoles){
+    public function __construct(CheckRolesAdmin $checkRoles){
         $this->checkroles = $checkRoles ;
     }
     /**
