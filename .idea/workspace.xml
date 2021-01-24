@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6e13be45-cabb-4d7a-9187-45e4b8682c13" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Roles/CheckRoles.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Roles/CheckRoles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/app/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +138,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../virtual2" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -174,6 +172,9 @@
       <workItem from="1611077790219" duration="894000" />
       <workItem from="1611254051215" duration="6243000" />
       <workItem from="1611408710663" duration="1098000" />
+      <workItem from="1611484677542" duration="331000" />
+      <workItem from="1611485672621" duration="704000" />
+      <workItem from="1611496264571" duration="1266000" />
     </task>
     <servers />
   </component>
