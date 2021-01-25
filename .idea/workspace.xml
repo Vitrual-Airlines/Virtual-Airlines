@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e13be45-cabb-4d7a-9187-45e4b8682c13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/ErrorController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/AccessDeniedHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/AuthenticationEntryPoint.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/app/error.html.twig" afterDir="false" />
+    <list default="true" id="6e13be45-cabb-4d7a-9187-45e4b8682c13" name="Default Changelist" comment="NEW SYSTEME FOR CHECK ROLE">
+      <change afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/virtualairline.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/virtualairline.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/User/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Roles/CheckRoles.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Roles/CheckRolesAdmin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Roles/CheckRolesUser.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
@@ -158,7 +148,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../virtual2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../virtual" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -199,7 +189,7 @@
       <workItem from="1611513202482" duration="1111000" />
       <workItem from="1611567300373" duration="3816000" />
       <workItem from="1611589779407" duration="854000" />
-      <workItem from="1611591526975" duration="2211000" />
+      <workItem from="1611591526975" duration="6072000" />
     </task>
     <task id="LOCAL-00001" summary="checkroles admin +checkroles user">
       <created>1611509471157</created>
@@ -208,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611509471157</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="NEW SYSTEME FOR CHECK ROLE">
+      <created>1611594496807</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611594496807</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +214,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="checkroles admin +checkroles user" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkroles admin +checkroles user" />
+    <MESSAGE value="NEW SYSTEME FOR CHECK ROLE" />
+    <option name="LAST_COMMIT_MESSAGE" value="NEW SYSTEME FOR CHECK ROLE" />
   </component>
 </project>
