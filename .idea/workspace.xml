@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e13be45-cabb-4d7a-9187-45e4b8682c13" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/ErrorController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/AccessDeniedHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/AuthenticationEntryPoint.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/app/error.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/virtualairline.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/virtualairline.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/User/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Roles/CheckRoles.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Roles/CheckRolesAdmin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Roles/CheckRolesUser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,6 +143,7 @@
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/vendor/bin/.phpunit" />
     </include_path>
   </component>
   <component name="ProjectId" id="1nCXdEapCnQIKklNpsLSE7GUf6X" />
@@ -184,6 +196,10 @@
       <workItem from="1611485672621" duration="704000" />
       <workItem from="1611496264571" duration="1266000" />
       <workItem from="1611509167605" duration="1142000" />
+      <workItem from="1611513202482" duration="1111000" />
+      <workItem from="1611567300373" duration="3816000" />
+      <workItem from="1611589779407" duration="854000" />
+      <workItem from="1611591526975" duration="2211000" />
     </task>
     <task id="LOCAL-00001" summary="checkroles admin +checkroles user">
       <created>1611509471157</created>
